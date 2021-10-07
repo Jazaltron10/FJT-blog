@@ -1,11 +1,11 @@
-import './App.css'
+import { StyledContent } from "./components/styles/Content.styles"
 
 function App() {
   return (
     <div className="App">
-      <div className="content">
+      <StyledContent>
         <h1>App Component </h1>
-        </div>
+      </StyledContent>
     </div>
   )
 }
