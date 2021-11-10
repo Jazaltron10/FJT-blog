@@ -1,7 +1,14 @@
+import { NavbarStyles, LinkStyles } from "./styles/Navbar.styles"
+
+
 export default function Navbar() {
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <NavbarStyles>
+            <h1>The FloJoTer Blog</h1>
+            <LinkStyles>
+                <a href="/">Home</a>
+                <a href="create/">New Blog</a>
+            </LinkStyles>
+        </NavbarStyles>
     )
 }
