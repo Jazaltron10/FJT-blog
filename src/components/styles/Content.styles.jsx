@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const StyledContent = styled.div`
-    padding: 40px 0;
+    max-width: 768px;
+    /* max-width: 1024px; */
+    margin: 40px auto;
+    padding: 20px;
     transition: ease-in .24s;
     text-align: center;
     background: black;
