@@ -7,9 +7,10 @@ import Home from "./components/Home"
 
 const theme = {
   colors:{
-    hoveCols: "#f1356d",
+    pinkcols: "#f1356d",
     PrimoCols:  "hsl(192, 100%, 9%)",
-    TransCols:  "rgba(0,0,0,0.15)",
+    TransCols:  "rgba(0,250,0,0.15)",
+    limecols:  "limegreen",
   },
   IpadMobile:"768px",
   SduoMobile:"540px",
