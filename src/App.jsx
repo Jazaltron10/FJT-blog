@@ -9,6 +9,7 @@ const theme = {
   colors:{
     hoveCols: "#f1356d",
     PrimoCols:  "hsl(192, 100%, 9%)",
+    TransCols:  "rgba(0,0,0,0.15)",
   },
   IpadMobile:"768px",
   SduoMobile:"540px",
