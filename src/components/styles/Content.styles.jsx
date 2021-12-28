@@ -5,7 +5,7 @@ export const StyledContent = styled.div`
     /* max-width: 1024px; */
     margin: 40px auto;
     padding: 20px;
-    transition: ease-in .24s;
+    transition: ease-in-out .35s;
     text-align: center;
     background: black;
     color: white;
@@ -22,7 +22,7 @@ export const StyledContent = styled.div`
     }
 
     &:hover{
-        background: linear-gradient(45deg, lime, red, blue );
+        background: linear-gradient(45deg, lime, green, darkgreen, black );
         cursor: pointer;
     }
 `
