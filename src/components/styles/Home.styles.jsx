@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const HomeStyles = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 h2{
     color: ${({theme}) => theme.colors.limecols};;
     margin-bottom: .5rem;
     /* display: flex; */
 }
 button{
+    margin-bottom: .5rem;
     width: 5rem;
     height: 2.5rem;
     padding: .25rem;
