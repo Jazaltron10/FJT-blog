@@ -16,7 +16,7 @@ const theme = {
   SduoMobile:"540px",
   IphoneMobile:"360px",
   GfoldMobile:"280px",
-  
+
   assets:{
     radius: "0.5rem",
     radius_2: "1rem",

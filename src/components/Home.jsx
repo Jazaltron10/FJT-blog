@@ -1,4 +1,5 @@
-import { HomeStyles, BtnStyles } from "./styles/Home.styles"
+import { HomeStyles } from "./styles/Home.styles"
+import { BtnStyles } from "./styles/Button.styles"
 import {useState} from "react"
 // A hook in react is a special type of function that does a certain job in react, all hooks start with the name "use"
 const Home = () => {
