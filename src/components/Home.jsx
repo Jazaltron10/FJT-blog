@@ -1,20 +1,30 @@
 import { HomeStyles, BtnStyles } from "./styles/Home.styles"
+import {useState} from "react"
+// A hook in react is a special type of function that does a certain job in react, all hooks start with the name "use"
 const Home = () => {
-
+    // let name = "Dario"
+    const[name, laughName] = useState("Dario Navares");
+    const [age, setAge ] = useState(25);
     const handleClick = (e) => {
-        console.log("Hello, Ninjas", e);
+        laughName("John Carpenter");
+        setAge(32);
+        console.log(`Hello ${name}`, e.target);
     }
     
+    // Using the setName function triggers react to rerender a component and update the value of the name variable.
     const handleClickAgain = (name, e) =>{
+        laughName("Dayton Bridgerton");
+        setAge(96);
         console.log(`Hello ${name}`, e.target);
     }
     
     return (
         <HomeStyles>
             <h2>Homepage</h2>
+            <p>{name} is {age} years old </p>
             <BtnStyles>
-            <button onClick={handleClick}>Click Me</button>
-            <button onClick={(e)=>{handleClickAgain('Mario', e)}}>Click Me Again</button>
+            <button onClick={handleClick}>L-Click</button>
+            <button onClick={(e)=>{handleClickAgain('Mario', e)}}>R-ClickA</button>
             </BtnStyles>
         </HomeStyles>
     )
