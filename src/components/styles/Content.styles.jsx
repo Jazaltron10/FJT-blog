@@ -7,7 +7,7 @@ export const StyledContent = styled.div`
     padding: 20px;
     transition: ease-in-out .35s;
     text-align: center;
-    background: black;
+    background: ${({theme})=> theme.colors.TransCols};
     color: white;
     h1{
         color: yellow;
@@ -22,8 +22,8 @@ export const StyledContent = styled.div`
     }
 
     &:hover{
-        background: linear-gradient(45deg, lime, green, darkgreen, black );
-        cursor: pointer;
+        /* background: linear-gradient(45deg, lime, green, darkgreen, black ); */
+        /* cursor: pointer; */
     }
 `
 
