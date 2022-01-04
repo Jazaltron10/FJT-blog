@@ -33,4 +33,12 @@ export const BlogPreview = styled.div`
     >p{
         color: ${({theme}) => theme.colors.limecols};
     }
+    /*RESPONSIVE SECTION*/
+    /*@media(max-width: ${({theme})=> theme.SduoMobile}){}*/
+    /*@media(max-width: ${({theme})=> theme.IphoneMobile}){}*/
+    @media(max-width: ${({theme})=> theme.GfoldMobile}){
+        width: 90%;
+        margin :auto;
+        padding: 16px 2px;
+    }
     `

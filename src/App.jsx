@@ -14,6 +14,7 @@ const theme = {
   },
   IpadMobile:"768px",
   SduoMobile:"540px",
+  PixelMobile:"420px",
   IphoneMobile:"360px",
   GfoldMobile:"280px",
 
