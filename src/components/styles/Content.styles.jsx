@@ -20,10 +20,26 @@ export const StyledContent = styled.div`
     h1:hover{
         color: white;
     }
-
     &:hover{
         /* background: linear-gradient(45deg, lime, green, darkgreen, black ); */
         /* cursor: pointer; */
     }
-`
+    @media(max-width: ${({theme})=> theme.SduoMobile}){
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    @media(max-width: ${({theme})=> theme.IphoneMobile}){
+        font-weight: 400;
+        font-size: .85rem;
+        padding: .2rem;
+    }
+    @media(max-width: ${({theme})=> theme.GfoldMobile}){
+        font-weight: 400;
+        font-size: .85rem;
+        padding: .05rem;
+        >h2{
+            font-size: 1rem;
+        }
+    }
+    `
 
