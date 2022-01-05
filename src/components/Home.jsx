@@ -1,5 +1,6 @@
-import { HomeStyles, BlogPreview } from "./styles/Home.styles"
+import { HomeStyles} from "./styles/Home.styles"
 import {useState} from "react"
+import BlogList from "./BlogList";
 // A hook in react is a special type of function that does a certain job in react, all hooks start with the name "use"
 const Home = () => {
     const [blogs, setBlogs ] = useState([
@@ -10,14 +11,7 @@ const Home = () => {
     
     return (
         <HomeStyles>
-            {
-                blogs.map((blog)=> (
-                    <BlogPreview key={blog.id}>
-                        <h2>{ blog.title }</h2>
-                        <p>Written by { blog.author }</p>
-                    </BlogPreview>
-                ))
-            }
+            <BlogList blogs = {blogs} title="All Blogs"/>
         </HomeStyles>
     )
 }
