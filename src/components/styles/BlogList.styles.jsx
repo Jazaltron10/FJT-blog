@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 
-export const BlogList = styled.div`
-    
+export const BlogListStyles = styled.div`
+    color: black;
 `

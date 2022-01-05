@@ -22,6 +22,8 @@ const theme = {
     radius: "0.5rem",
     radius_2: "1rem",
     padding: "1rem",
+    h: "100vh",
+    w: "100vw",
     padding_2: "0.5rem",
     fontSizeSmallest: "1rem",
     fontSizeSmall: "2rem",

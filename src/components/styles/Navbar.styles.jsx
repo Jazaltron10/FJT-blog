@@ -64,6 +64,9 @@ export const NavbarStyles = styled.nav`
     }
     `
 
+
+
+
 export const LinkStyles = styled.div`
         margin-left: auto;
         background-color: ${({theme}) => theme.colors.TransCols};
