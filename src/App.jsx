@@ -9,7 +9,7 @@ const theme = {
   colors:{
     pinkcols: "#f1356d",
     PrimoCols:  "hsl(192, 100%, 9%)",
-    TransCols:  "rgba(0,250,0,0.15)",
+    TransCols:  "rgba(0,250,0,0.055)",
     limecols:  "limegreen",
   },
   IpadMobile:"768px",
@@ -19,6 +19,7 @@ const theme = {
   GfoldMobile:"280px",
 
   assets:{
+    font_fam: "Poppins",
     radius: "0.5rem",
     radius_2: "1rem",
     padding: "1rem",

@@ -7,11 +7,12 @@ export const NavbarStyles = styled.nav`
     justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
-    border-bottom: 1.5px solid ${({theme})=>theme.colors.pinkcols};
+    border-bottom: 2px solid ${({theme})=>theme.colors.pinkcols};
     /* Dev Cols */
     background: ${({theme})=>theme.colors.TransCols}; 
     
     h1{
+        font-family: ${({theme})=>theme.assets.font_fam};
         background: ${({theme})=>theme.colors.pinkcols}; 
         border: 2px groove ${({theme})=>theme.assets.color_i};
         padding: 1rem;
@@ -68,23 +69,26 @@ export const NavbarStyles = styled.nav`
 
 
 export const LinkStyles = styled.div`
-        margin-left: auto;
-        background-color: ${({theme}) => theme.colors.TransCols};
-        border-radius: 10px;
-        padding: 1rem;
-        text-align: center;
-        border: 2px groove ${({theme})=>theme.assets.color_a};
+margin-left: auto;
+background-color: ${({theme}) => theme.colors.TransCols};
+border-radius: 10px;
+padding: 1rem;
+text-align: center;
+border: 2px groove ${({theme})=>theme.assets.color_c};
+
         
         a {
             margin-left: 16px;
             text-decoration: none;
             color:${({theme})=> theme.colors.pinkcols};
             padding: 6px;
-            font-family: cursive;
+            /* font-family: cursive; */
+            font-family: ${({theme})=>theme.assets.font_fam};
+            transition: all .5s ease-out;
         }
         a:hover{
             color:${({theme})=> theme.colors.limecols};
-            transform: scale(1.5);
+            transform: scale(1.1);
         }
 
     /* RESPONSIVE SECTION */

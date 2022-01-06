@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const StyledContent = styled.div`
     max-width: 768px;
-    /* max-width: 1024px; */
     margin: 40px auto;
     padding: 20px;
     transition: ease-in-out .35s;
     text-align: center;
     background: ${({theme})=> theme.colors.TransCols};
     color: white;
+    border-radius: 1.5rem;
+    border-right: 2px groove ${({theme})=>theme.colors.pinkcols};
+    border-left:  2px groove ${({theme})=>theme.colors.pinkcols};
+    /* min-height: 100vh; */
     h1{
         color: yellow;
         transition: ease-in .24s;
