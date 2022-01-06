@@ -21,9 +21,11 @@ export const BlogPreview = styled.div`
     border-bottom: 1px solid ${({theme})=>theme.assets.color_c};
     width: 100%;
     text-align: left;
+    transition: all .3s ease;
     &:hover{
-        box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+        box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
         cursor: pointer;
+        border-radius: 1.5rem;
     }
     >h2{
         font-size: 20px;
@@ -33,12 +35,13 @@ export const BlogPreview = styled.div`
     >p{
         color: ${({theme}) => theme.colors.limecols};
     }
+
     /*RESPONSIVE SECTION*/
-    /*@media(max-width: ${({theme})=> theme.SduoMobile}){}*/
-    /*@media(max-width: ${({theme})=> theme.IphoneMobile}){}*/
     @media(max-width: ${({theme})=> theme.GfoldMobile}){
         width: 90%;
         margin :auto;
         padding: 16px 2px;
+    /*@media(max-width: ${({theme})=> theme.SduoMobile}){}*/
+    /*@media(max-width: ${({theme})=> theme.IphoneMobile}){}*/
     }
     `

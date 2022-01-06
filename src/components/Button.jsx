@@ -1,9 +1,14 @@
-import React from 'react'
+import {BtnStyles} from "./styles/Button.styles"
 
 const Button = () => {
-    return <button>
-        click me
-    </button>
+    return  (
+        <BtnStyles>
+            delete me
+        </BtnStyles>
+        )
+
 }
 
 export default Button
+
+// return  <BtnStyles> delete blog </BtnStyles>
