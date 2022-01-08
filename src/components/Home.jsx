@@ -4,7 +4,7 @@ import BlogList from "./BlogList";
 // A hook in react is a special type of function that does a certain job in react, all hooks start with the name "use"
 const Home = () => {
     const [blogs, setBlogs ] = useState([
-        {title:'Tales of a Spy', body:'lorem ipsum...', author:'Glory Bond', id: 1},
+        {title:'Tales of a Spy', body:'lorem ipsum...', author:'lory Bond', id: 1},
         {title:'Welcome party!', body:'lorem ipsum...', author:'Peter Killmonger', id: 2},
         {title:'Just Business', body:'lorem ipsum...', author:'Jasmine Neutron', id: 3},
         {title:'BlockChain vs Krypto', body:'lorem ipsum...', author:'Annie Bareda', id: 4}
