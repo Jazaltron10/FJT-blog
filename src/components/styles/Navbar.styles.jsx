@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const NavbarStyles = styled.nav`
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 768px;
-    margin: 0 auto;
-    border-bottom: 2px solid ${({theme})=>theme.colors.pinkcols};
-    /* Dev Cols */
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 768px;
+margin: 0 auto;
+/* color:${({theme})=> theme.colors.limecols}; */
+border-bottom: 2px solid ${({theme})=>theme.colors.pinkcols};
+/* Dev Cols */
     background: ${({theme})=>theme.colors.TransCols}; 
     
     h1{
