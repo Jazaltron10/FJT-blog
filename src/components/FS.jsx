@@ -39,11 +39,32 @@ export default Home
 
 
 
+// useEffect Dependencies 
+
+{
+const [name, setName] = useState("mario");
+
+const handleDelete = (id) =>{
+    const newBlogs = blogs.filter( blog => blog.id !== id); 
+    setBlogs(newBlogs);
+}
+// if the blog.id we are iterating through is not equal to the id we are clicking on, return it in the newBlogs array and use the setBlogs method to set the newBlogs as the new array.
+
+useEffect(() => {
+    console.log('use effect ran');
+    console.log(name); 
+}, [name]);
+
+// return (
+    <HomeStyles>
+        <BlogList blogs = {blogs} title="All Blogs" handleDelete={handleDelete}/>
+        <BtnStyles onClick={()=> setName("Luigi")}>Change name</BtnStyles>
+        <p>{name}</p>
+    </HomeStyles>
+// )
 
 
-
-
-
-
+// export default Home
+}
 
 

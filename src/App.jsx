@@ -57,16 +57,11 @@ const theme = {
 
 
 function App() {
-
-  const title = "App Component"
-  const likes = 50
-  const person = {name:"yoshi", age: 30};
   return (
     <ThemeProvider theme = {theme}>
     <ContainerStyles>
-    <GlobalStyles/>
-      <Navbar/>
-      
+      <GlobalStyles/>
+        <Navbar/>
       <StyledContent>
         <Home/>
       </StyledContent>
