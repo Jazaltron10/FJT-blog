@@ -14,5 +14,4 @@ export const BtnStyles = styled.button`
         color:${({theme})=> theme.colors.limecols};
         cursor: pointer;
     }
-
 `

@@ -4,6 +4,10 @@ import GlobalStyles from './components/styles/Global'
 import {ContainerStyles} from './components/styles/Container.styled'
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Create from "./components/Create"
+import BlogDetails from "./components/BlogDetails"
+import NotFound from "./components/NotFound"
 
 const theme = {
   colors:{
@@ -58,15 +62,25 @@ const theme = {
 
 function App() {
   return (
-    <ThemeProvider theme = {theme}>
-    <ContainerStyles>
-      <GlobalStyles/>
-        <Navbar/>
-      <StyledContent>
-        <Home/>
-      </StyledContent>
-    </ContainerStyles>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme = {theme}>
+      <ContainerStyles>
+        <GlobalStyles/>
+          <Navbar/>
+          <StyledContent>
+            <Routes>
+                <Route exact path="/" caseSensitive={false} element={<Home/>}/>
+
+                <Route exact path="/create" caseSensitive={false} element={<Create/>}/>
+                
+                <Route exact path="/blogs/:id" caseSensitive={false} element={<BlogDetails/>}/>
+                
+                <Route path="*" caseSensitive={false} element={<NotFound/>}/>
+            </Routes>
+          </StyledContent>
+      </ContainerStyles>
+      </ThemeProvider>
+    </Router>
   )
 }
 
