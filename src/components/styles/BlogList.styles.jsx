@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const BlogListStyles = styled.div`
-    color: black;
     >h2{
+        color: black;
         text-align: left;
         @media(max-width:${({theme})=> theme.IphoneMobile}){
             padding: 1rem;

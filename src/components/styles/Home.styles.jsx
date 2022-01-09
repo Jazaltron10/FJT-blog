@@ -4,6 +4,10 @@ export const HomeStyles = styled.div`
 /* display: flex;
 flex-direction: column;
 align-items: center; */
+&>div{
+    color: ${({theme}) => theme.colors.limecols};
+    text-align: left; 
+}
 >h2{
     color: ${({theme}) => theme.colors.limecols};
     margin-bottom: .5rem;
@@ -20,14 +24,18 @@ export const BlogPreview = styled.div`
     margin: 20px 0;
     border-bottom: 1px solid ${({theme})=>theme.assets.color_c};
     width: 100%;
-    text-align: left;
+    text-align: left; 
     transition: all .3s ease;
     &:hover{
         box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
         cursor: pointer;
         border-radius: 1.5rem;
     }
-    >h2{
+    &>a{
+        text-decoration: none;
+        color: ${({theme}) => theme.colors.limecols};
+    }
+    &>h2{
         font-size: 20px;
         color: ${({theme})=>theme.colors.pinkcols};
         margin-bottom: 8px;

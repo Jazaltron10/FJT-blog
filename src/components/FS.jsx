@@ -34,6 +34,31 @@ const Home = () => {
 // it is the anon function that gets access to the event object.
 
 
+
+// You can pass down functions and variables as props
+
+// useEffect, the empty array means only ever fire any function in the hook once after the initial render of the page.
+{/* <BlogList blogs = {blogs.filter((blog)=>blog.author==='John Smilga')} title="John's blogs"/> */}
+/*
+// The Filter Method
+it fires a callback function for each item in the array 
+if we return true for that item, it keeps it in the array and if false it filters it out of the array and then it returns a new array with only the items we don't filter out of the array included.
+*/ 
+
+
+// Using the setName function triggers react to rerender a component and update the value of the name variable.
+
+// Using Anonymous functions, ()=>{}which are functions that are not held in memory (Constants or variables) to handle click events 
+// We wrap functions that take in parameters when a click event is fired in anonymous functions in order to prevent it from automatically setting of irrespective of the event.
+// it is the anon function that gets access to the event object.
+
+
+// Starting the json-server
+// npx json-server --watch Database/db.json --port 8000
+
+
+{/* Logical && evaluates the left first and if it is false it never even bothers with the right, but if it is true it executes the right */}
+{blogs && <BlogList blogs = {blogs} title="All Blogs" handleDelete={handleDelete}/>}
 export default Home
 
 

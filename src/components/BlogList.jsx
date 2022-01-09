@@ -1,26 +1,34 @@
 import { BlogPreview } from "./styles/Home.styles"
 import {BlogListStyles} from "./styles/BlogList.styles"
 import { BtnStyles } from "./styles/Button.styles"
-const BlogList = ({blogs, title , handleDelete}) => {
-    // const BlogList = ({props}) => {
-    // const blogs = props.blogs;
-    // const title = props.title;
-    // console.log(props, blogs);
+import { Link } from "react-router-dom"
+const BlogList = ({blogs, title}) => {
     
-
     return (
         <BlogListStyles>
             <h2>{title+"!"}</h2>
             {
                 blogs.map((blog)=> (
                     <BlogPreview key={blog.id}>
-                        <h2>{ blog.title }</h2>
-                        <p>Written by { blog.author }</p>
-                        <BtnStyles onClick={()=>handleDelete(blog.id)}>delete me</BtnStyles>
+                        <Link to={`/blogs/${blog.id}`}>
+                            <h2>{ blog.title }</h2>
+                            <p>Written by { blog.author }</p>
+                        </Link>
                     </BlogPreview>
                 ))
             }
         </BlogListStyles>
     )
 }
+
 export default BlogList
+
+
+
+
+
+
+// const BlogList = ({props}) => {
+// const blogs = props.blogs;
+// const title = props.title;
+// console.log(props, blogs);
