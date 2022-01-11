@@ -14,8 +14,9 @@ border-bottom: 2px solid ${({theme})=>theme.colors.pinkcols};
     
     h1{
         font-family: ${({theme})=>theme.assets.font_fam};
-        background: ${({theme})=>theme.colors.pinkcols}; 
-        border: 2px groove ${({theme})=>theme.assets.color_i};
+        /* background: ${({theme})=>theme.colors.pinkcols};  */
+        color: ${({theme})=>theme.colors.limecols}; 
+        /* border: 2px groove ${({theme})=>theme.assets.color_i}; */
         padding: 1rem;
         border-radius: 10px;
         text-align: center;
@@ -75,7 +76,7 @@ background-color: ${({theme}) => theme.colors.TransCols};
 border-radius: 10px;
 padding: 1rem;
 text-align: center;
-border: 2px groove ${({theme})=>theme.assets.color_c};
+/* border: 2px groove ${({theme})=>theme.assets.color_c}; */
 
         
         a {
