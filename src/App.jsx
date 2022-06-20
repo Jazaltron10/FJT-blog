@@ -84,4 +84,5 @@ function App() {
   )
 }
 
+// npm run dbserver, then npm run dev
 export default App
