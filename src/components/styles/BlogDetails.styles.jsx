@@ -11,6 +11,9 @@ export const BdStyles = styled.div`
     div{
         margin: 20px 0;
     }
+    p{
+        /* color:#f1356d; */
+    }
     @media(max-width:${({theme})=>theme.GfoldMobile}){
         padding: 10px;
         h2{

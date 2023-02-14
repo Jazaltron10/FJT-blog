@@ -17,7 +17,7 @@ export const StyledContent = styled.div`
         transition: ease-in .24s;
     }
     p{
-        color: red;
+        color: #f1356d;
         font-weight: 700;
     }
     h1:hover{
