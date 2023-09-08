@@ -16,6 +16,16 @@
     "styled-components": "^5.3.1",
     "vite": "^2.5.4"
   },
+  "version": 2,
+  "builds": [
+    {
+      "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog",
+      "use": "@vercel/node",
+      "config": {
+        "command": "npm run build"
+      }
+    }
+  ],
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.0",
     "gh-pages": "^6.0.0"
