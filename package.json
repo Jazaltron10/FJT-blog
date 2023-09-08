@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "homepage": "https://Jazaltron10.github.io/Jazaltron10.github.io",
   "scripts": {
+    "install": "npm install",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "serve": "vite preview",
     "deploy": "npm run build && gh-pages -d build",
     "dbserver": "npx json-server --watch Database/db.json --port 8000"
