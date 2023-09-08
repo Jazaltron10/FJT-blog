@@ -1,6 +1,6 @@
 {
   "name": "react-blog",
-  "version": "0.0.0",
+  "version": 2,
   "homepage": "https://Jazaltron10.github.io/Jazaltron10.github.io",
   "scripts": {
     "install": "npm install",
@@ -15,15 +15,14 @@
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.2.1",
     "styled-components": "^5.3.1",
-    "vite": "^2.5.4"
+    "vite": "^4.4.9"
   },
-  "version": 2,
   "builds": [
     {
       "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog/dist",
       "use": "@vercel/node",
       "config": {
-        "command": "npm run build"
+        "command": "npx vite build"
       }
     }
   ],
