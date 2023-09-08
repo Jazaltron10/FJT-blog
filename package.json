@@ -5,7 +5,7 @@
   "scripts": {
     "install": "npm install",
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "npm run build",
     "serve": "vite preview",
     "deploy": "npm run build && gh-pages -d build",
     "dbserver": "npx json-server --watch Database/db.json --port 8000"
@@ -22,7 +22,7 @@
       "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog/dist",
       "use": "@vercel/node",
       "config": {
-        "command": "npx vite build"
+        "command": "npm run build"
       }
     }
   ],
