@@ -19,7 +19,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog",
+      "src": "/c/Users/Jasper Albert Nri/Documents/Repository/react-blog/build",
       "use": "@vercel/node",
       "config": {
         "command": "npm run build"
