@@ -1,3 +1,4 @@
+// /This Component Never really gets used 
 import { HomeStyles, BtnStyles } from "./styles/Home.styles"
 import {useState} from "react"
 // A hook in react is a special type of function that does a certain job in react, all hooks start with the name "use"
